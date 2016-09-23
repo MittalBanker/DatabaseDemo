@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>{
+     NSMutableArray *tableData;
+     IBOutlet UITableView *tableViewSource;
+}
 
 
 @end
